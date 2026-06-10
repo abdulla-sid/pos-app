@@ -1,0 +1,3 @@
+#!/bin/sh
+# auto format staged files on commit 
+exec bunx lint-staged

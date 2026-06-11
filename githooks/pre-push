@@ -1,0 +1,6 @@
+#!/bin/sh
+# pre push gate: block the path if the project doesn't typecheck
+# Whole project check belongs here, not pre-commit
+
+
+bun run typecheck

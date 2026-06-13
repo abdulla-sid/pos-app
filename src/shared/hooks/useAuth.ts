@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 import { authClient } from "@/shared/auth/auth-client";
 
 export function useAuth() {

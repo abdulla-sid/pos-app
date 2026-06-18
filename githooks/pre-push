@@ -2,5 +2,7 @@
 # pre push gate: block the path if the project doesn't typecheck
 # Whole project check belongs here, not pre-commit
 
+set -e
 
+bun run lint
 bun run typecheck

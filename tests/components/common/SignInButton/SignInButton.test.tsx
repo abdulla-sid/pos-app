@@ -4,7 +4,7 @@ import { SignInButton } from "@/components/composites/common/SignInButton/SignIn
 
 vi.mock("@/shared/hooks/useAuth", () => ({
   useAuth: () => ({
-    signIn: vi.dynamicImportSettled(),
+    signIn: vi.fn(),
     signOut: vi.fn(),
     session: null,
     isPending: false,

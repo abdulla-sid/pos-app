@@ -4,6 +4,14 @@ import { genericOAuth } from "better-auth/plugins";
 import * as schema from "@/shared/db/schema";
 import { db } from "../db";
 
+const clientId = process.env.SQUARE_CLIENT_ID;
+const clientSecret = process.env.SQUARE_CLIENT_SECRET;
+if (!clientId || !clientSecret) {
+  throw new Error(
+    "SQUARE_CLIENT_ID and SQUARE_CLIENT_SECRET must be set in .env",
+  );
+}
+
 export const auth = betterAuth({
   database: drizzleAdapter(db, { provider: "sqlite", schema }),
   plugins: [
@@ -11,8 +19,8 @@ export const auth = betterAuth({
       config: [
         {
           providerId: "square",
-          clientId: process.env.SQUARE_CLIENT_ID!,
-          clientSecret: process.env.SQUARE_CLIENT_SECRET!,
+          clientId,
+          clientSecret,
           authorizationUrl:
             "https://connect.squareupsandbox.com/oauth2/authorize",
           tokenUrl: "https://connect.squareupsandbox.com/oauth2/token",

@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  allowedDevOrigins: ["smashing-sulfate-kung.ngrok-free.dev"],
 };
 
 export default nextConfig;

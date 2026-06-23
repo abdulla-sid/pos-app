@@ -2,6 +2,7 @@ import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { genericOAuth } from "better-auth/plugins";
 import * as schema from "@/shared/db/schema";
+import { SQUARE_API_BASE, SQUARE_VERSION } from "@/shared/square/config";
 import { db } from "../db";
 
 const clientId = process.env.SQUARE_CLIENT_ID;
@@ -21,20 +22,16 @@ export const auth = betterAuth({
           providerId: "square",
           clientId,
           clientSecret,
-          authorizationUrl:
-            "https://connect.squareupsandbox.com/oauth2/authorize",
-          tokenUrl: "https://connect.squareupsandbox.com/oauth2/token",
+          authorizationUrl: `${SQUARE_API_BASE}/oauth2/authorize`,
+          tokenUrl: `${SQUARE_API_BASE}/oauth2/token`,
           scopes: ["MERCHANT_PROFILE_READ", "ITEMS_READ"],
           getUserInfo: async (tokens) => {
-            const res = await fetch(
-              "https://connect.squareupsandbox.com/v2/merchants/me",
-              {
-                headers: {
-                  Authorization: `Bearer ${tokens.accessToken}`,
-                  "Square-Version": "2025-01-23",
-                },
+            const res = await fetch(`${SQUARE_API_BASE}/v2/merchants/me`, {
+              headers: {
+                Authorization: `Bearer ${tokens.accessToken}`,
+                "Square-Version": SQUARE_VERSION,
               },
-            );
+            });
             const { merchant } = (await res.json()) as {
               merchant: { id: string; business_name: string };
             };

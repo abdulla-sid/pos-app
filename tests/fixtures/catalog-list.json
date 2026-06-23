@@ -1,0 +1,292 @@
+{
+  "objects": [
+    {
+      "type": "ITEM",
+      "id": "QHKJRTEE7LJBA6KASTVQLDDF",
+      "updated_at": "2026-06-20T17:56:13.444Z",
+      "created_at": "2026-06-20T17:56:13.485Z",
+      "version": 1781978173444,
+      "is_deleted": false,
+      "present_at_all_locations": true,
+      "item_data": {
+        "name": "Espresso",
+        "description": "Double shot",
+        "is_taxable": true,
+        "variations": [
+          {
+            "type": "ITEM_VARIATION",
+            "id": "K72QP663OV77ZC7Y3ARTAXFJ",
+            "updated_at": "2026-06-20T17:56:13.444Z",
+            "created_at": "2026-06-20T17:56:13.485Z",
+            "version": 1781978173444,
+            "is_deleted": false,
+            "present_at_all_locations": true,
+            "item_variation_data": {
+              "item_id": "QHKJRTEE7LJBA6KASTVQLDDF",
+              "name": "Regular",
+              "ordinal": 0,
+              "pricing_type": "FIXED_PRICING",
+              "price_money": {
+                "amount": 300,
+                "currency": "USD"
+              },
+              "sellable": true,
+              "stockable": true
+            }
+          }
+        ],
+        "product_type": "REGULAR",
+        "description_html": "<p>Double shot</p>",
+        "description_plaintext": "Double shot",
+        "is_archived": false
+      }
+    },
+    {
+      "type": "ITEM",
+      "id": "YXXSV65OHBY7O6RLPFDPFH3E",
+      "updated_at": "2026-06-20T17:56:13.444Z",
+      "created_at": "2026-06-20T17:56:13.485Z",
+      "version": 1781978173444,
+      "is_deleted": false,
+      "present_at_all_locations": true,
+      "item_data": {
+        "name": "Latte",
+        "description": "Espresso + steamed milk",
+        "is_taxable": true,
+        "variations": [
+          {
+            "type": "ITEM_VARIATION",
+            "id": "GEHAE5WM2APAT3OXFJHMEFG6",
+            "updated_at": "2026-06-20T17:56:13.444Z",
+            "created_at": "2026-06-20T17:56:13.485Z",
+            "version": 1781978173444,
+            "is_deleted": false,
+            "present_at_all_locations": true,
+            "item_variation_data": {
+              "item_id": "YXXSV65OHBY7O6RLPFDPFH3E",
+              "name": "Small",
+              "ordinal": 0,
+              "pricing_type": "FIXED_PRICING",
+              "price_money": {
+                "amount": 400,
+                "currency": "USD"
+              },
+              "sellable": true,
+              "stockable": true
+            }
+          },
+          {
+            "type": "ITEM_VARIATION",
+            "id": "BBXWXPC3KARBHV5N7MLA3P6N",
+            "updated_at": "2026-06-20T17:56:13.444Z",
+            "created_at": "2026-06-20T17:56:13.485Z",
+            "version": 1781978173444,
+            "is_deleted": false,
+            "present_at_all_locations": true,
+            "item_variation_data": {
+              "item_id": "YXXSV65OHBY7O6RLPFDPFH3E",
+              "name": "Large",
+              "ordinal": 1,
+              "pricing_type": "FIXED_PRICING",
+              "price_money": {
+                "amount": 500,
+                "currency": "USD"
+              },
+              "sellable": true,
+              "stockable": true
+            }
+          }
+        ],
+        "product_type": "REGULAR",
+        "description_html": "<p>Espresso + steamed milk</p>",
+        "description_plaintext": "Espresso + steamed milk",
+        "is_archived": false
+      }
+    },
+    {
+      "type": "ITEM",
+      "id": "26TKFBZVYXXHCIXRCOMZAKH6",
+      "updated_at": "2026-06-20T17:56:13.444Z",
+      "created_at": "2026-06-20T17:56:13.485Z",
+      "version": 1781978173444,
+      "is_deleted": false,
+      "present_at_all_locations": true,
+      "item_data": {
+        "name": "Cappuccino",
+        "description": "Espresso + foam",
+        "is_taxable": true,
+        "variations": [
+          {
+            "type": "ITEM_VARIATION",
+            "id": "FJQNECVWXCD27B43CDB2SOJX",
+            "updated_at": "2026-06-20T17:56:13.444Z",
+            "created_at": "2026-06-20T17:56:13.485Z",
+            "version": 1781978173444,
+            "is_deleted": false,
+            "present_at_all_locations": true,
+            "item_variation_data": {
+              "item_id": "26TKFBZVYXXHCIXRCOMZAKH6",
+              "name": "Regular",
+              "ordinal": 0,
+              "pricing_type": "FIXED_PRICING",
+              "price_money": {
+                "amount": 450,
+                "currency": "USD"
+              },
+              "sellable": true,
+              "stockable": true
+            }
+          }
+        ],
+        "product_type": "REGULAR",
+        "description_html": "<p>Espresso + foam</p>",
+        "description_plaintext": "Espresso + foam",
+        "is_archived": false
+      }
+    },
+    {
+      "type": "ITEM",
+      "id": "PALDHRFNZPWZVHNOEB2E3WIP",
+      "updated_at": "2026-06-20T17:56:13.444Z",
+      "created_at": "2026-06-20T17:56:13.485Z",
+      "version": 1781978173444,
+      "is_deleted": false,
+      "present_at_all_locations": true,
+      "item_data": {
+        "name": "Cold Brew",
+        "description": "Slow-steeped",
+        "is_taxable": true,
+        "variations": [
+          {
+            "type": "ITEM_VARIATION",
+            "id": "JK3SCFACYNNBQS2PSJDIUTQR",
+            "updated_at": "2026-06-20T17:56:13.444Z",
+            "created_at": "2026-06-20T17:56:13.485Z",
+            "version": 1781978173444,
+            "is_deleted": false,
+            "present_at_all_locations": true,
+            "item_variation_data": {
+              "item_id": "PALDHRFNZPWZVHNOEB2E3WIP",
+              "name": "Regular",
+              "ordinal": 0,
+              "pricing_type": "FIXED_PRICING",
+              "price_money": {
+                "amount": 425,
+                "currency": "USD"
+              },
+              "sellable": true,
+              "stockable": true
+            }
+          }
+        ],
+        "product_type": "REGULAR",
+        "description_html": "<p>Slow-steeped</p>",
+        "description_plaintext": "Slow-steeped",
+        "is_archived": false
+      }
+    },
+    {
+      "type": "ITEM",
+      "id": "VHCKFSNGO5ECOUPDN5JDUCVT",
+      "updated_at": "2026-06-20T17:56:13.444Z",
+      "created_at": "2026-06-20T17:56:13.485Z",
+      "version": 1781978173444,
+      "is_deleted": false,
+      "present_at_all_locations": true,
+      "item_data": {
+        "name": "Croissant",
+        "description": "Butter croissant",
+        "is_taxable": true,
+        "variations": [
+          {
+            "type": "ITEM_VARIATION",
+            "id": "HRMUL46BPN3JYDBEN7K6PNUD",
+            "updated_at": "2026-06-20T17:56:13.444Z",
+            "created_at": "2026-06-20T17:56:13.485Z",
+            "version": 1781978173444,
+            "is_deleted": false,
+            "present_at_all_locations": true,
+            "item_variation_data": {
+              "item_id": "VHCKFSNGO5ECOUPDN5JDUCVT",
+              "name": "Regular",
+              "ordinal": 0,
+              "pricing_type": "FIXED_PRICING",
+              "price_money": {
+                "amount": 350,
+                "currency": "USD"
+              },
+              "sellable": true,
+              "stockable": true
+            }
+          }
+        ],
+        "product_type": "REGULAR",
+        "description_html": "<p>Butter croissant</p>",
+        "description_plaintext": "Butter croissant",
+        "is_archived": false
+      }
+    },
+    {
+      "type": "ITEM",
+      "id": "FMEMCCZXCNNIWAO4BXPKPPAQ",
+      "updated_at": "2026-06-20T17:56:13.444Z",
+      "created_at": "2026-06-20T17:56:13.485Z",
+      "version": 1781978173444,
+      "is_deleted": false,
+      "present_at_all_locations": true,
+      "item_data": {
+        "name": "Bagel",
+        "description": "Fresh-baked",
+        "is_taxable": true,
+        "variations": [
+          {
+            "type": "ITEM_VARIATION",
+            "id": "SYD5WY5UFHXAS4O7WHDSJMVU",
+            "updated_at": "2026-06-20T17:56:13.444Z",
+            "created_at": "2026-06-20T17:56:13.485Z",
+            "version": 1781978173444,
+            "is_deleted": false,
+            "present_at_all_locations": true,
+            "item_variation_data": {
+              "item_id": "FMEMCCZXCNNIWAO4BXPKPPAQ",
+              "name": "Plain",
+              "ordinal": 0,
+              "pricing_type": "FIXED_PRICING",
+              "price_money": {
+                "amount": 250,
+                "currency": "USD"
+              },
+              "sellable": true,
+              "stockable": true
+            }
+          },
+          {
+            "type": "ITEM_VARIATION",
+            "id": "LMZ5ZEYCHHT2BDAFOETPX3I7",
+            "updated_at": "2026-06-20T17:56:13.444Z",
+            "created_at": "2026-06-20T17:56:13.485Z",
+            "version": 1781978173444,
+            "is_deleted": false,
+            "present_at_all_locations": true,
+            "item_variation_data": {
+              "item_id": "FMEMCCZXCNNIWAO4BXPKPPAQ",
+              "name": "Everything",
+              "ordinal": 1,
+              "pricing_type": "FIXED_PRICING",
+              "price_money": {
+                "amount": 300,
+                "currency": "USD"
+              },
+              "sellable": true,
+              "stockable": true
+            }
+          }
+        ],
+        "product_type": "REGULAR",
+        "description_html": "<p>Fresh-baked</p>",
+        "description_plaintext": "Fresh-baked",
+        "is_archived": false
+      }
+    }
+  ]
+}

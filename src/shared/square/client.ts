@@ -1,7 +1,7 @@
 import "server-only";
 import { SQUARE_API_BASE, SQUARE_VERSION } from "./config";
 import { mapCatalog } from "./mappers";
-import { Product } from "./type";
+import type { Product } from "./type";
 
 export async function listCatalog(accessToken: string): Promise<Product[]> {
   const objects: unknown[] = [];

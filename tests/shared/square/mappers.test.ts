@@ -1,11 +1,13 @@
 import { describe, expect, it } from "vitest";
-import fixture from "../../fixtures/catalog-list.json";
 import { mapCatalog } from "@/shared/square/mappers";
-import type { Variant, Product } from "@/shared/square/type";
+import type { Product, Variant } from "@/shared/square/type";
+import fixture from "../../fixtures/catalog-list.json";
 
 describe("mapCatalog", () => {
   it("maps square ITEM objects to lean Product view models", () => {
-    const products = mapCatalog((fixture as { objects: any[] }).objects ?? []);
+    const products = mapCatalog(
+      (fixture as { objects: Parameters<typeof mapCatalog>[0] }).objects ?? [],
+    );
     const latte = products.find((p: Product) => p.name === "Latte");
     expect(latte).toBeDefined();
     expect(latte?.variants).toHaveLength(2);

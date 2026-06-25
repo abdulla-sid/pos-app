@@ -3,24 +3,13 @@ import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { Suspense } from "react";
 import { Header } from "@/components/composites/common/Header/Header";
+import { ProductGrid } from "@/containers/ProductGrid/ProductGrid";
 import { auth } from "@/shared/auth/auth";
 import { listCatalog } from "@/shared/square/client";
 
 async function CatalogList({ accessToken }: { accessToken: string }) {
   const products = await listCatalog(accessToken);
-
-  return (
-    <ul>
-      {products.map((p) => (
-        <li key={p.id}>
-          {p.name} —{" "}
-          {p.variants
-            .map((v) => `$${(v.priceCents / 100).toFixed(2)}`)
-            .join(" / ")}
-        </li>
-      ))}
-    </ul>
-  );
+  return <ProductGrid products={products} />;
 }
 
 export default async function HomePage() {

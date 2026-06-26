@@ -1,1 +1,1 @@
-# pos-app
+Yes, Tanstack is overkill. Yes, I added it. This is a learning project

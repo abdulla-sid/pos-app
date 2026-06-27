@@ -3,13 +3,13 @@ import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { Suspense } from "react";
 import { Header } from "@/components/composites/common/Header/Header";
-import { ProductGrid } from "@/containers/ProductGrid/ProductGrid";
+import { CatalogSearch } from "@/containers/CatalogSearch/CatalogSearch";
 import { auth } from "@/shared/auth/auth";
 import { listCatalog } from "@/shared/square/client";
 
 async function CatalogList({ accessToken }: { accessToken: string }) {
   const products = await listCatalog(accessToken);
-  return <ProductGrid products={products} />;
+  return <CatalogSearch initialProducts={products} />;
 }
 
 export default async function HomePage() {
